@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="png" href="./images/Icon.png">
+    <link rel="stylesheet" href="./index.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positivus</title>
+</head>
+
+<body>
+    <div class="mainCont">
+        <div class="header">
+            <div class="logo">
+                <img src="./images/Icon.png" alt="icon">
+                <h3>Positivus</h3>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li>About us</li>
+                    <li>Services</li>
+                    <li>Use Cases</li>
+                    <li>Pricing</li>
+                    <li>Blog</li>
+
+                </ul>
+                <button>Request a quote</button>
+            </div>
+
+        </div>
+        <div class="hero-Sec">
+            <div class="content">
+                <h2>
+                    Navigating the digital landscape for success
+                </h2>
+                <p>
+                    Our digital marketing agency helps businesses grow and succeed online through a range of services
+                    including SEO, PPC, social media marketing, and content creation.
+                </p>
+                <button>
+                    Book a Consultation
+                </button>
+            </div>
+            <div class="web-pic">
+                <img src="./images/Illustration.png" alt="">
+            </div>
+        </div>
+        <div class="log-section">
+            <ul>
+                <li><img src="./images/logos/Company logo.png" alt=""></li>
+                <li><img src="./images/logos/hub.png" alt=""></li>
+                <li><img src="./images/logos/Vector (2).png" alt=""></li>
+                <li><img src="./images/logos/Vector (3).png" alt=""></li>
+                <li><img src="./images/logos/Vector.png" alt=""></li>
+                <li><img src="./images/logos/sd.png" alt=""></li>
+            
+            <!-- Duplicate -->
+            
+                <li><img src="./images/logos/Company logo.png" alt=""></li>
+                <li><img src="./images/logos/hub.png" alt=""></li>
+                <li><img src="./images/logos/Vector (2).png" alt=""></li>
+                <li><img src="./images/logos/Vector (3).png" alt=""></li>
+                <li><img src="./images/logos/Vector.png" alt=""></li>
+                <li><img src="./images/logos/sd.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="servicesClass">
+            <div class="services">
+                <button>
+                    Services
+                </button>
+                <p>
+                    At our digital marketing agency, we offer a range of services to help businesses grow and succeed
+                    online. These services include:
+                </p>
+            </div>  
+
+            <div class="service-Blog">
+                <div class="serBlog">
+                    <div class="ser-content">
+                        <h2>
+                            Search Engine Optimization
+                        </h2>
+                        <div class="ser-btn">
+                            <button>
+                                <i class="fa-solid fa-arrow-up"></i>
+                            </button>
+                            <p><a href="">Learn more</a></p>
+                        </div>
+                    </div>
+                    <div class="ImagePNG">
+                        <img src="./images/Illustration2.png" alt="">
+                    </div>
+                </div>
+                <div class="serBlog2">
+                    <div class="ser-content ser-updated">
+                        <h2>
+                            Pay-per-click advertising
+                        </h2>
+                        <div class="ser-btn">
+                            <button>
+                                <i class="fa-solid fa-arrow-up"></i>
+                            </button>
+                            <p><a href="">Learn more</a></p>
+                        </div>
+                    </div>
+                    <div class="ImagePNG">
+                        <img src="./images/Illustration (1).png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="services">
+                <button>
+                    Our Working Process
+                </button>
+                <p>
+                    Step-by-Step Guide to Achieving <br>Your Business Goals
+                </p>
+            </div>
+            <div class="cardContainer">
+                <div class="ser-Card" id="ser-Card">
+                    <div class="card-content">
+                        <h1>01<span class="text">Consultation</span></h1>
+                        <button>
+                            <i class="fa-solid fa-minus" id="Btn-minus" onclick="hide(this)"></i>
+                            <i class="fa-solid fa-plus" id="Btn-plus" onclick="show(this)"></i>
+                        </button>
+                    </div>
+                    <div class="card-context" id="showCard">
+                        <hr style="border: none; height: 2px; background-color: rgb(0, 0, 0); margin: 20px 0px;">
+                        <p>During the initial consultation, we will discuss your business goals and objectives, target
+                            audience,
+                            and current marketing efforts. This will allow us to understand your needs and tailor our
+                            services
+                            to best fit your requirements.</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <!-- Form Data -->
+        <div class="services">
+            <button>
+                Contact Us
+            </button>
+            <p>
+                Connect with us, and Discuss your <br> Digital Marketing needs
+            </p>
+        </div>
+        <div class="form">
+            <form action="">
+                <table>
+                    <tr class="radio">
+                        <label><input type="radio" name="contact"> Say Hi</label>
+                        <label class="radio2"><input type="radio" name="contact"> Get a Quote</label>
+
+                    </tr>
+                    <tr>
+                        <td>Name * <br>
+                            <input type="text" placeholder="Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email * <br>
+                            <input type="email" placeholder="Email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Message * <br>
+                            <textarea name="Message" id="" placeholder="Message"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button>Send Message</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <div class="profileImg">
+                <img src="./images/star.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+<script>
+    function show(curElem) {
+        let showCard = document.getElementById("showCard");
+        showCard.style.display = "block";
+        showCard.style.transition = "0.3s";
+        let btnminus = document.getElementById("Btn-minus");
+        let btnplus = document.getElementById("Btn-plus");
+        btnplus.style.display = "none";
+        btnminus.style.display = "block";
+        let serCard = document.getElementById("ser-Card");
+        serCard.style.backgroundColor = "#b9ff66"
+        serCard.style.transition = "0.3s"
+    }
+    function hide(curElem) {
+        let hideCard = document.getElementById("showCard");
+        showCard.style.display = "none";
+        showCard.style.transition = "0.3s";
+        let btnminus = document.getElementById("Btn-minus");
+        let btnplus = document.getElementById("Btn-plus");
+        btnplus.style.display = "block";
+        btnminus.style.display = "none";
+        let serCard = document.getElementById("ser-Card");
+        serCard.style.backgroundColor = "#fff";
+        serCard.style.transition = "0.3s";
+
+    }
+</script>
+
+</html>

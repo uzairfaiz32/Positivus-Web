@@ -1,0 +1,484 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    
+    margin: 20px 50px;
+}
+
+:root {
+    --formcolor: #F3F3F3;
+    --outlinecolor: #b9ff66;
+    --font-family: "Space Grotesk", sans-serif;
+    --buttoncolr: #191A23;
+    --BtnText: #fff;
+    --logoColor: #2c2d33;
+
+}
+
+/* Header */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h3 {
+    font-size: 26px;
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 36px;
+    height: 36px;
+}
+
+.header {
+    font-family: var(--font-family);
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+.navbar button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.navbar button:hover {
+    background-color: var(--outlinecolor);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar ul button {
+    padding: 5px 10px;
+}
+
+.navbar ul li::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--outlinecolor);
+    display: block;
+}
+
+.navbar ul li:hover {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.navbar ul li:hover::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: var(--outlinecolor);
+    display: block;
+    transition: 0.3s ease-in;
+}
+.radio tr label{
+    padding: 0px 25px;
+}
+
+.footer-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Hero Section */
+.hero-Sec {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+
+    &>.web-pic img {
+        width: 35rem;
+    }
+
+}
+
+.content {
+    font-family: var(--font-family);
+    width: 40%;
+
+    &>h2 {
+        font-size: 54px;
+        margin: 20px 0px;
+    }
+
+    &>p {
+        line-height: 28px;
+    }
+
+    & button {
+        font-size: 16px;
+        margin-top: 25px;
+        padding: 18px 50px;
+        background-color: var(--buttoncolr);
+        color: var(--BtnText);
+        border-radius: 10px;
+    }
+
+    & button:hover {
+        background-color: var(--outlinecolor);
+        color: var(--buttoncolr);
+        transition: 0.2s;
+        cursor: pointer;
+    }
+}
+
+/* Logo Section */
+.log-section {
+    margin: 80px 0px;
+}
+
+.log-section ul {
+    animation:scrollLeft 5s linear infinite;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 72px;
+    align-items: center;
+    width: max-content;
+    &>li{
+        filter: grayscale(100%);
+        list-style: none;
+    }
+}
+@keyframes scrollLeft {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-51.5%);
+    }
+
+}
+
+
+/* ServicesClass */
+.services {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 25px;
+    width: 60%;
+
+}
+
+.services button {
+    font-weight: 550;
+    letter-spacing: 1px;
+    border: none;
+    font-size: 22px;
+    padding: 5px 10px;
+    background-color: var(--outlinecolor);
+    color: var(--buttoncolr);
+}
+
+.services p {
+    font-family: var(--font-family);
+}
+
+/* Service_Blog */
+.service-Blog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.serBlog {
+    font-size: 12px;
+    font-family: var(--font-family);
+    padding: 50px 30px;
+    border-radius: 25px;
+    width: 400px;
+    height: 250px;
+    margin-top: 80px;
+    border-color: black;
+    border-style: solid;
+    gap: 25px;
+    border-width: 1px 1px 5px 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &>.ser-content .ser-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &>.ser-content .ser-btn p a {
+        text-decoration: none;
+        color: var(--buttoncolr);
+    }
+
+    &>.ser-content .ser-btn p a:hover {
+        font-weight: 600;
+    }
+
+    &>.ser-content h2 {
+        padding-left: 10px;
+        background-color: var(--outlinecolor);
+        margin-bottom: 40px;
+    }
+
+    &>.ser-content .ser-btn button {
+        width: 34px;
+        height: 34px;
+        border: none;
+        border-radius: 50%;
+        background-color: var(--buttoncolr);
+        color: var(--outlinecolor);
+    }
+
+    &>.ser-content .ser-btn button i {
+        rotate: 45deg;
+        font-size: 20px;
+    }
+}
+
+.ImagePNG img {
+    width: 164px;
+    height: auto;
+}
+
+.serBlog2 {
+    background-color: var(--outlinecolor);
+    font-size: 12px;
+    font-family: var(--font-family);
+    padding: 50px 30px;
+    border-radius: 25px;
+    width: 400px;
+    height: 250px;
+    margin-top: 80px;
+    border-color: black;
+    border-style: solid;
+    gap: 25px;
+    border-width: 1px 1px 5px 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &>.ser-content .ser-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &>.ser-content .ser-btn p a {
+        text-decoration: none;
+        color: var(--buttoncolr);
+    }
+
+    &>.ser-content .ser-btn p a:hover {
+        font-weight: 600;
+    }
+
+    &>.ser-content h2 {
+        padding-left: 10px;
+        background-color: var(--BtnText);
+        margin-bottom: 40px;
+    }
+
+    &>.ser-content .ser-btn button {
+        width: 34px;
+        height: 34px;
+        border: none;
+        border-radius: 50%;
+        background-color: var(--buttoncolr);
+        color: var(--outlinecolor);
+    }
+
+    &>.ser-content .ser-btn button i {
+        rotate: 45deg;
+        font-size: 20px;
+    }
+}
+
+/* Card Services */
+.ser-Card {
+    border-width: 1px 1px 5px 1px;
+    padding: 50px 50px;
+    margin: 50px 0px;
+    background-color: var(--BtnText);
+    border-radius: 15px;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+
+}
+
+.card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.card-content span {
+    display: inline-block;
+    padding-left: 18px;
+    font-size: 20px;
+    font-family: var(--font-family);
+}
+
+.card-content h1 {
+    display: inline-block;
+    font-size: 36px;
+    font-family: var(--font-family);
+}
+
+.card-content button {
+    background-color: var(--BtnText);
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 12px;
+    font-size: 16px;
+
+    &>.fa-minus {
+        font-weight: bolder;
+    }
+
+}
+
+.card-content button:hover {
+    background-color: var(--buttoncolr);
+    color: var(--BtnText);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#showCard {
+    display: none;
+}
+
+.fa-minus {
+    display: none;
+}
+
+.form {
+    margin-top: 64px;
+    border-radius: 25px;
+    width: 100%;
+    height: auto;
+    background-color: var(--formcolor);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+}
+.profileImg{
+     position: relative;
+}
+.profileImg img {
+    width: 650px;
+    position: absolute;
+    left: 0;
+    margin-right:50px    ;
+      
+}
+form {
+    margin-left: 50px;
+    padding: 20px 25px;
+}
+
+table tr td {
+    font-family: var(--font-family);
+    padding: 15px;
+}
+
+td input {
+    width: 400px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+td textarea {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 400px;
+    height: 200px;
+}
+
+td button {
+    border-radius: 10px;
+    letter-spacing: 1px;
+    border: none;
+    font-size: 15px;
+    padding: 15px;
+    width: 400px;
+    background-color: var(--buttoncolr);
+    color: var(--BtnText);
+}
+
+td button:hover {
+    background-color: var(--outlinecolor);
+    border: 1px solid black;
+    color: var(--buttoncolr);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+table .radio label {
+    display: inline-block;
+
+}
+.footer-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 500px;
+    padding: 25px;
+    background-color: rgb(25, 26, 35);
+}
+.footer-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
